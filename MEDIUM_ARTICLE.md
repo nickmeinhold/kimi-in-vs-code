@@ -12,19 +12,40 @@ Moonshot AI's Kimi K2 is a powerful language model with 1 trillion parameters an
 1. Go to [OpenRouter](https://openrouter.ai/)
 2. Sign up or log in
 3. Add some credit to your account (Settings → Credits)
+
+![OpenRouter credits page](screenshots/openrouter-credits.png)
+
 4. Navigate to API Keys and create one
+
+![OpenRouter API keys page](screenshots/openrouter-api-key.png)
 
 ## Step 2: Configure VSCode Copilot
 
 1. Open VSCode
 2. Open Copilot Chat (Cmd+Shift+I on Mac, Ctrl+Shift+I on Windows)
+
+![Copilot Chat panel](screenshots/copilot-chat.png)
+
 3. Click the model selector dropdown
+
+![Model selector dropdown](screenshots/model-selector.png)
+
 4. Click "Manage Models..."
 5. Select **OpenRouter** as the provider
+
+![Select OpenRouter provider](screenshots/select-openrouter.png)
+
 6. Enter your API key when prompted
+
+![Enter API key](screenshots/enter-api-key.png)
+
 7. Select **Kimi K2** from the available models
 
+![Select Kimi K2 model](screenshots/select-kimi-k2.png)
+
 That's it. You're now using Kimi K2 in VSCode.
+
+![Kimi K2 working in Copilot](screenshots/kimi-working.png)
 
 ## Why Kimi K2?
 
