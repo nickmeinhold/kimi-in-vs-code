@@ -1,72 +1,27 @@
-# Kimi K2 API Example
+# Kimi K2 in VSCode Copilot
 
-A simple example of using Moonshot AI's Kimi K2 model via OpenRouter.
+Use Moonshot AI's Kimi K2 model in VSCode Copilot via OpenRouter.
 
-## Why Use a Virtual Environment?
+## Quick Start
 
-A virtual environment isolates your project's dependencies from your system Python and other projects. This prevents:
+1. Get an API key from [OpenRouter](https://openrouter.ai/) (add some credit)
+2. In VSCode Copilot, select OpenRouter as provider and enter your key
+3. Choose Kimi K2 from the model list
 
-- **Version conflicts**: Project A needs `openai==1.0` but Project B needs `openai==2.0`? No problem—each has its own isolated packages.
-- **System pollution**: Your global Python stays clean. No accumulation of random packages over time.
-- **Reproducibility**: Anyone can recreate your exact environment from `requirements.txt`.
-- **Easy cleanup**: Delete the `venv` folder and everything is gone. No leftover packages.
+That's it!
 
-## Setup
+## Test Script
 
-### 1. Create a virtual environment
+Want to test the API directly?
 
-```bash
-python -m venv venv
-```
-
-### 2. Activate it
-
-**macOS/Linux:**
-```bash
-source venv/bin/activate
-```
-
-**Windows:**
-```bash
-venv\Scripts\activate
-```
-
-You'll see `(venv)` in your terminal prompt when it's active.
-
-### 3. Install dependencies
-
-```bash
-pip install openai python-dotenv
-```
-
-### 4. Configure your API key
-
-Create a `.env` file (or copy the example):
-
+1. Create a `.env` file:
 ```
 OPENAI_API_BASE=https://openrouter.ai/api/v1
-OPENAI_API_KEY=your-openrouter-api-key-here
-MODEL_NAME=moonshotai/kimi-k2
+OPENAI_API_KEY=your-api-key-here
 ```
 
-Get your API key from [OpenRouter](https://openrouter.ai/).
-
-### 5. Run the example
-
+2. Install dependencies and run:
 ```bash
+pip install openai python-dotenv
 python test.py
 ```
-
-## Deactivating
-
-When you're done:
-
-```bash
-deactivate
-```
-
-## Files
-
-- `test.py` - Example script that calls Kimi K2
-- `.env` - Your API credentials (never commit this!)
-- `.gitignore` - Excludes `.env` and `venv/` from git
